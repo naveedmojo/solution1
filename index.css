@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-container h1 {
+  color: rgb(83, 210, 238);
+}
+.welcome-start-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #118ab2;
+  background-image: linear-gradient(
+    319deg,
+    #118ab2 0%,
+    #06d6a0 37%,
+    #ffd166 100%
+  );
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.welcome-start-button:hover {
+  padding: 12px 25px;
+  background-color: #bbff99;
+  background-image: linear-gradient(
+    319deg,
+    #bbff99 0%,
+    #ffec99 37%,
+    #ff9999 100%
+  );
+}
+#survey-screen {
+  height: 100%;
+  width: 450px;
+  text-align: center;
+  padding: 0.4rem 0.8rem;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.options {
+  display: none;
+}
+
+.circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.circle.highlight {
+  background-color: yellow;
+}
+.button-prev {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+.button-next {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #03c03c;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+.button-skip {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #008b8b;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+.rating-option {
+  padding: 12px;
+  margin: 0.375rem;
+}
+.rating-label {
+  color: rgb(235, 208, 208);
+  font-size: 23px;
+}
+#recommendation-options {
+  padding: 10px;
+}
+.recommendation-options-circle {
+  color: rgb(235, 208, 208);
+  font-size: 18px;
+  margin: 3px;
+}
+#improvement-text {
+  border-radius: 4px;
+  margin: 7px;
+  border: none;
+}
+#question-circles {
+  margin: 0.5rem;
+  padding: 0.3rem 0.7rem;
+}
+.direction-buttons {
+  padding: 0.3rem;
+  margin: 0.4rem;
+}

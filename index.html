@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<meta charset="UTF-16">
+  <head>
+    <title>Customer Survey</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div id="welcome-container">
+      <h1>Welcome Sir</h1>
+      <button class="welcome-start-button" onclick="startSurvey()">
+        Rate Us
+      </button>
+    </div>
+    <div id="survey-screen" style="display: none">
+      <h2 style="color: #f0f0ff;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding: .275rem;">Question <span id="question-number"></span></h2>
+      <p style="font-family: 'Courier New', Courier, monospace;font-size: larger;color: #f0f0ff;padding: .2rem .4rem;margin:.7rem ;" id="question-text"></p>
+    
+     <div id="rating-options" style="display: none; padding: .4rem .8rem; margin: .2rem;">
+  <label class="rating-label">
+    <input type="radio" class="rating-option" name="rating" value="1" />
+    1
+  </label>
+  <label class="rating-label">
+    <input type="radio" class="rating-option" name="rating" value="2" />
+    2
+  </label>
+  <label class="rating-label">
+    <input type="radio" class="rating-option" name="rating" value="3" />
+    3
+  </label>
+  <label class="rating-label">
+    <input type="radio" class="rating-option" name="rating" value="4" />
+    4
+  </label>
+  <label class="rating-label">
+    <input type="radio" class="rating-option" name="rating" value="5" />
+    5
+  </label>
+</div>
+      <div id="recommendation-options" style="display: none">
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="1" />
+    <span class="label">1</span>
+  </label>
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="2" />
+    <span class="label">2</span>
+  </label>
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="3" />
+    <span class="label">3</span>
+  </label>
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="4" />
+    <span class="label">4</span>
+  </label>
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="5" />
+    <span class="label">5</span>
+  </label>
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="6" />
+    <span class="label">6</span>
+  </label>
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="7" />
+    <span class="label">7</span>
+  </label>
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="8" />
+    <span class="label">8</span>
+  </label>
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="9" />
+    <span class="label">9</span>
+  </label>
+  <label class="recommendation-options-circle">
+    <input type="radio" name="recommendation" value="10" />
+    <span class="label">10</span>
+  </label>
+</div>
+      <div id="text-input" style="display: none">
+        <textarea id="improvement-text" rows="4" cols="50" placeholder="Enter your message"></textarea>
+      </div>
+        <div id="question-circles"></div>
+       <div class="direction-buttons">
+      <button class="button-prev" onclick="previousQuestion()">Previous</button>
+      <button class="button-next"  onclick="nextQuestion()">Next</button>
+      <button class="button-skip" onclick="skipQuestion()">Skip</button>
+      </div>
+    </div>
+  </body>
+</html>
+
